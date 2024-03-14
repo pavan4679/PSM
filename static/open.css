@@ -29,6 +29,9 @@
     font-family: Roboto;
 }
 
+.nav-link {
+    transition: color 0.3s, transform 0.3s;
+}
 .food-munch-logo {
     width: 100px;
    font-size: 44px;
