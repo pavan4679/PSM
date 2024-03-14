@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pandas
+opencv-python
+Jinja2==3.0.3
+fastapi-sqlalchemy
+python-dotenv
+flask
+torch
+nltk
+psycopg2
+python-multipart
