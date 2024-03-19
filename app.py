@@ -62,7 +62,7 @@ async def signup(
 def login(request: Request):
     return templates.TemplateResponse("login.html", {"request": request})
 
-@app.post("/login")
+@app.post("/login",response_class=HTMLResponse)
 async def do_login(
     request: Request,
     username: str = Form(...),
@@ -73,12 +73,14 @@ async def do_login(
     existing_user = cur.fetchone()
     cur.close()
     
+    print(username)
+    print(password)
     if existing_user:
         print(existing_user)
-        return RedirectResponse("/map", status_code=303)
+        return templates.TemplateResponse("profile.html",{"request": request, "username": username, "password": password,"existing_user": existing_user})
     
     else:
-        return JSONResponse(status_code=401, content={"message": "Wrong credentials"})
+        return HTMLResponse(status_code=401, content="Wrong credentials")
 
 
     
