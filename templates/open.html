@@ -44,6 +44,7 @@
 <div class="banner-section-bg-container d-flex flex-column justify-content-center">  
 </div>
 
+<h1 style="margin-left: 5vw; margin-top: 10vh;">Explore Solution</h1>
 <div id="exp" class="healthy-food-section pt-5 pb-5">
     <div class="container">
         <div class="row">
@@ -59,14 +60,14 @@
                 <p class="healthy-food-section-description" style="text-align: justify;">
                     Our artificial intelligence platform analyzes video feeds from cameras to determine real-time parking availability for outdoor parking lots, this information is presented to commuters through an intuitive web, mobile interface and digital signboards
                 </p>
-                <button class="custom-button">-></button>
+                <button class="custom-button" onclick="translateToId2()">-></button>
             </div>
             
         </div>
     </div>
 </div>
 
-<div class="healthy-food-section pt-5 pb-5">
+<div class="healthy-food-section pt-5 pb-5" id="section2">
     <div class="container">
         <div class="row">
             
@@ -77,7 +78,7 @@
                 <p class="healthy-food-section-description" style="text-align: justify;">
 Once you grant access to your location in our application, it will seamlessly retrieve your precise geographical coordinates. These coordinates are then utilized to showcase your exact location on an interactive map, providing you with a visual representation of where you are on your screen. This feature enhances your overall experience by seamlessly integrating real-time location data into the application's interface.
                 </p>
-                <button class="custom-button">-></button>
+                <button class="custom-button" onclick="translateToId3()">-></button>
             </div>
             
             <div class="col-12 col-md-5">
@@ -89,7 +90,7 @@ Once you grant access to your location in our application, it will seamlessly re
     </div>
 </div>
 
-<div class="healthy-food-section pt-5 pb-5">
+<div class="healthy-food-section pt-5 pb-5" id="section3">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-5">
@@ -104,7 +105,7 @@ Once you grant access to your location in our application, it will seamlessly re
                 <p class="healthy-food-section-description" style="text-align: justify;">
 Our application, once granted location access, suggests nearby hotels and malls. It tailors recommendations based on your location. Additionally, you can manually search for specific places of interest, providing a personalized and convenient exploration experience.
                 </p>
-                <button class="custom-button">-></button>
+                <button class="custom-button" onclick="translateToId4()">-></button>
             </div>
             
         </div>
@@ -112,7 +113,7 @@ Our application, once granted location access, suggests nearby hotels and malls.
 </div>
 
 
-<div class="healthy-food-section pt-5 pb-5">
+<div class="healthy-food-section pt-5 pb-5" id="section4">
     <div class="container">
         <div class="row">
             
@@ -123,7 +124,7 @@ Our application, once granted location access, suggests nearby hotels and malls.
                 <p class="healthy-food-section-description" style="text-align: justify;">
                     Discover parking availability at your selected shopping mall, presenting a comprehensive view of all parking slots. Easily identify and locate free spaces to streamline your parking experience within the specific mall of your choice
                 </p>
-                <button class="custom-button">-></button>
+                <button class="custom-button" onclick="translateToId5()">-></button>
             </div>
 
             <div class="col-12 col-md-5">
@@ -136,7 +137,7 @@ Our application, once granted location access, suggests nearby hotels and malls.
     </div>
 </div>
 
-<div class="healthy-food-section pt-5 pb-5">
+<div class="healthy-food-section pt-5 pb-5" id="section5">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-5">
@@ -151,7 +152,6 @@ Our application, once granted location access, suggests nearby hotels and malls.
                 <p class="healthy-food-section-description" style="text-align: justify;">
                     Upon selecting an available parking slot from the list above, our application will provide the precise location of that slot and guide you with directions to reach your chosen parking space effortlessly
                 </p>
-                <button class="custom-button">-></button>
             </div>
             
         </div>
@@ -275,6 +275,56 @@ Our application, once granted location access, suggests nearby hotels and malls.
 <script>
    
 
+   function translateToId2() {
+    // Get the element by its ID
+    var sectionId = "section2"; // Change this to the desired ID
+    var section = document.getElementById(sectionId);
+
+    // Scroll to the element smoothly
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+  function translateToId3() {
+    // Get the element by its ID
+    var sectionId = "section3"; // Change this to the desired ID
+    var section = document.getElementById(sectionId);
+
+    // Scroll to the element smoothly
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+
+  function translateToId4() {
+    // Get the element by its ID
+    var sectionId = "section4"; // Change this to the desired ID
+    var section = document.getElementById(sectionId);
+
+    // Scroll to the element smoothly
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+
+  function translateToId5() {
+    // Get the element by its ID
+    var sectionId = "section5"; // Change this to the desired ID
+    var section = document.getElementById(sectionId);
+
+    // Scroll to the element smoothly
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
+
+
+
+   
 
 
 // Add smooth scrolling for the navigation links

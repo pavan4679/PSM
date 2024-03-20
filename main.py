@@ -50,6 +50,8 @@ def check(Fimg,img,poslist,threshold):
             vac.append(i//4)
         else:
             color = (0, 0, 255)
+
+
         pts = np.array([list(poslist[i-3]),list(poslist[i-2]),list(poslist[i-1]),list(poslist[i])],np.int32)
         pts = pts.reshape((-1, 1, 2))
         #cv2.rectangle(img, (poslist[i-1][0],poslist[i-1][1]), (poslist[i][0], poslist[i][1]), (255, 0, 255), 2)
@@ -60,10 +62,8 @@ def check(Fimg,img,poslist,threshold):
     fontScale =0.9
     color = (100, 0, 255)
     thickness = 3
-    # cv2.putText(img,  f'Vaccant: {Empty}/{len(poslist)//4}', (20, 30), font, 
-    #                fontScale, color, thickness, cv2.LINE_AA)
-    # cv2.putText(img, f'{vac}', (30, 1000), font, 
-    #                fontScale, color, thickness, cv2.LINE_AA)
+
+
     return Empty
 
 def gen_frames(cap,poslist,threshold,file):
