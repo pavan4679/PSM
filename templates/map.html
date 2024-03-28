@@ -95,15 +95,12 @@
                         position: location
                     });
 
-                    // Create an info window
                     var infoWindow = new google.maps.InfoWindow({
     content: '<strong style="font-weight:bold; font-size=22px;">' + address + '</strong><br>' +
             '<br><button class="search" onclick="getDirections(' + location.lat() + ', ' + location.lng() + ')">Get Directions <i class="fas fa-directions"></i> </button><br>' +
             '<br><button class="custom-button" onclick="navigateToIndex()" >Get the park slot <i class="fas fa-car-alt"></i></button>'
 });
 
-
-                    // Add click event listener to the marker
                     marker.addListener('click', function() {
                         infoWindow.open(map, marker);
                     });

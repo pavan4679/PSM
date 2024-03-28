@@ -37,7 +37,6 @@ def check(Fimg,img,poslist,threshold):
         ## crate the white background of the same size of original image
         wbg = np.ones_like(Fimg, np.uint8)*255
         cv2.bitwise_not(wbg,wbg, mask=mask)
-        # overlap the resulted cropped image on the white background
                       
         number_of_white_pix= np.sum(cropped == 255)
         number_of_black_pix = np.sum(cropped == 0)
@@ -54,10 +53,8 @@ def check(Fimg,img,poslist,threshold):
 
         pts = np.array([list(poslist[i-3]),list(poslist[i-2]),list(poslist[i-1]),list(poslist[i])],np.int32)
         pts = pts.reshape((-1, 1, 2))
-        #cv2.rectangle(img, (poslist[i-1][0],poslist[i-1][1]), (poslist[i][0], poslist[i][1]), (255, 0, 255), 2)
         cv2.polylines(img, [pts], True, color,2)
-        # cvzone.putTextRect(img, str(count), (poslist[i-3][0], poslist[i-1][1] - 3), scale=1,
-        #                    thickness=2, offset=0, colorR=color)
+       
     font = cv2.FONT_HERSHEY_SIMPLEX
     fontScale =0.9
     color = (100, 0, 255)

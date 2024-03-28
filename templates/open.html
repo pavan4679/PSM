@@ -12,7 +12,6 @@
     <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;500;600&display=swap">
    <style>
-        /* Add styles for smooth scrolling */
         body {
             scroll-behavior: smooth;
         }
@@ -32,8 +31,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div id="navtools" class="navbar-nav ml-auto">
-                <a class="nav-link " id="navitem1" href="#who">Why Choose Us <i class="fa fa-question" style="font-size:24px"></i> </a>&nbsp; 
-                <a class="nav-link " id="navitem2" href="#exp">Explore Solution <i class="fa fa-search" style="font-size:24px"></i>&nbsp&nbsp</a>
+                <a class="nav-link " id="navitem2" href="#exp1">Explore Solution <i class="fa fa-search" style="font-size:24px"></i>&nbsp&nbsp</a>
                 <a class="nav-link" id="navitem3" href="/sign">Sign up <i class='fas fa-user-alt' style='font-size:24px'></i>&nbsp&nbsp</a>
                 <a class="nav-link" id="navitem4" href="/login">Login <i class="fa fa-sign-in" style="font-size:24px"></i></a>
             </div>
@@ -44,7 +42,7 @@
 <div class="banner-section-bg-container d-flex flex-column justify-content-center">  
 </div>
 
-<h1 style="margin-left: 5vw; margin-top: 10vh;">Explore Solution</h1>
+<h1  style="margin-left: 5vw; margin-top: 10vh;">Explore Solution</h1>
 <div id="exp" class="healthy-food-section pt-5 pb-5">
     <div class="container">
         <div class="row">
@@ -237,38 +235,6 @@ Our application, once granted location access, suggests nearby hotels and malls.
     </div>
 </div>
 
-<div class="container fixed-bottom" style="position: fixed; bottom: 0; right: -20%;">
-    <div class="chatbox">
-        <div class="chatbox__support">
-            <div class="chatbox__header">
-                <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
-                </div>
-                <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
-                </div>
-            </div>
-            <div class="chatbox__messages">
-                <div></div>
-            </div>
-            <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
-            </div>
-        </div>
-        <div class="chatbox__button">
-            <button><img src="./static/images/chatbox-icon.svg" /></button>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
 
 <script type="text/javascript" src="./static/app.js"></script>
 
@@ -276,22 +242,17 @@ Our application, once granted location access, suggests nearby hotels and malls.
    
 
    function translateToId2() {
-    // Get the element by its ID
-    var sectionId = "section2"; // Change this to the desired ID
+    var sectionId = "section2"; 
     var section = document.getElementById(sectionId);
-
-    // Scroll to the element smoothly
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   }
 
   function translateToId3() {
-    // Get the element by its ID
-    var sectionId = "section3"; // Change this to the desired ID
+    var sectionId = "section3"; 
     var section = document.getElementById(sectionId);
 
-    // Scroll to the element smoothly
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -299,11 +260,8 @@ Our application, once granted location access, suggests nearby hotels and malls.
 
 
   function translateToId4() {
-    // Get the element by its ID
-    var sectionId = "section4"; // Change this to the desired ID
+    var sectionId = "section4"; 
     var section = document.getElementById(sectionId);
-
-    // Scroll to the element smoothly
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -311,11 +269,9 @@ Our application, once granted location access, suggests nearby hotels and malls.
 
 
   function translateToId5() {
-    // Get the element by its ID
-    var sectionId = "section5"; // Change this to the desired ID
+    
+    var sectionId = "section5"; 
     var section = document.getElementById(sectionId);
-
-    // Scroll to the element smoothly
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
@@ -326,19 +282,17 @@ Our application, once granted location access, suggests nearby hotels and malls.
 
    
 
-
-// Add smooth scrolling for the navigation links
-    $(document).ready(function(){
-        $("#navitem2").on('click', function(event) {
+  $(document).ready(function(){
+        $("a").on('click', function(event) {
             if (this.hash !== "") {
                 event.preventDefault();
-                var hash = this.hash;
+                 var hash = this.hash;
                 $('html, body').animate({
                     scrollTop: $(hash).offset().top
-                }, 3800, function(){
+                }, 800, function(){
                     window.location.hash = hash;
                 });
-            }
+            } 
         });
     });
 </script>
